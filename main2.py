@@ -20,11 +20,16 @@ print(firewall)
 #■■■■사용자 정보 확인 End■■■■
 
 #■■■■종목 코드 얻기 Start■■■■
-kospi = kiwoom.GetCodeListByMarket('0')
-kosdaq = kiwoom.GetCodeListByMarket('10')
+# kospi = kiwoom.GetCodeListByMarket('0')
+# kosdaq = kiwoom.GetCodeListByMarket('10')
 etf = kiwoom.GetCodeListByMarket('8')
 
-print(len(kospi), kospi)
-print(len(kosdaq), kosdaq)
+# print(len(kospi), kospi)
+# print(len(kosdaq), kosdaq)
 print(len(etf), etf)
 #■■■■종목 코드 얻기 End■■■■
+
+#■■■■종목명 얻기 Start■■■■
+name = kiwoom.GetMasterCodeName("005930")
+print(name)
+#■■■■종목명 얻기 End■■■■
